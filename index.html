@@ -36,7 +36,7 @@
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
+								<li class="nav-item"><a class="nav-link" href="#about">About</a></li> 
 								<li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a>
 								<li class="nav-item submenu dropdown">
 									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Schedule</a>
@@ -48,17 +48,16 @@
 									</ul>
 								</li> 
 								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Venue</a>
 									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Venue</a></li>
+										<li class="nav-item"><a class="nav-link" href="blog.html">a</a></li>
 										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
 									</ul>
 								</li> 
 								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right">
-								<li class="nav-item"><a href="#" class="tickets_btn">Register</a></li>
-								<li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
+								<li class="nav-item"><a href="https://goo.gl/forms/KtPOrhGzKPeIMuv42" class="tickets_btn">Register</a></li>
 							</ul>
 						</div> 
 					</div>
@@ -72,13 +71,13 @@
             <div class="banner_inner">
 				<div class="container">
 					<div class="banner_content">
-						<h2>INTERNATIONAL CONFERENCE ON<br/>EFFICACY OF SOFTWARE</h2>
-						<h3>TOOLS FOR MATHEMATICAL MODELING (ICESTMM 2019)</h3>
-						<p>In association with University of Mumbai
+						<h2 style="font-size: 40px;">INTERNATIONAL CONFERENCE ON EFFICACY OF SOFTWARE</h2>
+						<h2 style="font-size: 40px;font-weight: normal;">TOOLS FOR MATHEMATICAL MODELING (ICESTMM 2019)</h2>
+						<p style="font-size: 20px;"><i>In association with University of Mumbai</i>
 						<br>THADOMAL SHAHANI  ENGINEERING COLLEGE, MUMBAI
 						<br>(AICTE Approved, Under NBA  Accreditation 2019)
-						<br>19th & 20th April, 2019</p>
-						<a class="banner_btn" href="#">View More Details</a>
+						<br><b>19th & 20th April, 2019</b></p>
+						<a class="banner_btn" href="about-us.html">View More Details</a>
 					</div>
 				</div>
             </div>
@@ -125,7 +124,7 @@
         <!--================End Event Time Area =================-->
         
         <!--================Welcome Area =================-->
-        <section class="welcome_area pad_btm">
+        <section class="welcome_area pad_btm" id="about">
         	<div class="container">
         		<div class="welcome_inner row">
         			<div class="col-lg-5">
@@ -136,9 +135,15 @@
         			<div class="col-lg-6 offset-lg-1">
         				<div class="welcome_text">
         					<h3>Welcome to Eventure</h3>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace.</p>
-        					<a class="main_btn" href="#">View More Details</a>
+        					<p>The ICESTMM 2019 will be the first most comprehensive conference focused on the various aspects of advances
+							in use and efficiency of software tools for mathematical modeling in the field of Computer, Electronics,
+							Communication, Information Technology, Humanities and Management. Fundamental research are heavily
+							relying on abstraction and modeling of physical phenomena/ processes and artifacts.</p>
+        					<p>This conference aims to bring together leading scientific community and researchers working in the broad area
+							interdisciplinary segments. It will be beneficial to provide a premier scaffold for mutual exchange of technical
+							knowledge as well as discuss the challenges identified in the most recent innovations, trends and concern to
+							accelerate the research work amongst the scientific community.</p>
+        					<a class="main_btn" href="about-us.html">View More Details</a>
         				</div>
         			</div>
         		</div>
@@ -224,7 +229,7 @@
         <!--================End Team Area =================-->
         
         <!--================Event Schedule Area =================-->
-        <section class="event_schedule_area p_120">
+      <section class="event_schedule_area p_120">
         	<div class="container">
         		<div class="main_title">
         			<h2>Event Schedule</h2>
@@ -617,5 +622,32 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="js/gmaps.min.js"></script>
         <script src="js/theme.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+		  	var customOffset = 200;
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top-customOffset
+		      }, 800, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash-customOffset;
+		      });
+		    } // End if
+		  });
+		});
+		</script>
     </body>
 </html>
