@@ -298,7 +298,7 @@ button:focus {
 .header_area .navbar .tickets_btn {
   margin-left: 50px;
   margin-top: 8px;
-  margin-right: -100px;
+  margin-right: -30px;
 }
 
 .header_area .navbar .search {
@@ -3844,14 +3844,17 @@ h6 {
 ============================================================================================ */
 .price_area {
   background: #fafcff;
-  padding-bottom: 170px;
+
 }
 
 .price_area .price_inner {
   background: #fff;
+  
   border-radius: 10px;
   -webkit-box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
   box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.1);
+
+ 
 }
 
 .price_area .price_inner .col-lg-3:last-child .price_item .price_text:before {
