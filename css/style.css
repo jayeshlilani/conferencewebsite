@@ -3862,12 +3862,12 @@ h6 {
 }
 
 .price_item {
-  border-top: 2px solid #fff;
+  border-top: 4px solid #fff;
 }
 
 .price_item .price_text {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-left: 45px;
   position: relative;
 }
