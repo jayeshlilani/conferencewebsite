@@ -183,11 +183,11 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item {
-  margin-right: 50px;
+  margin-right: 40px;
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 500 16px/80px "Roboto", sans-serif;
+  font: 500 14px/80px "Roboto", sans-serif;
   text-transform: uppercase;
   color: #fff;
   padding: 0px;
@@ -296,9 +296,9 @@ button:focus {
 }
 
 .header_area .navbar .tickets_btn {
-  margin-left: 100px;
+  margin-left: 50px;
   margin-top: 8px;
-  margin-right: 100px;
+  margin-right: -100px;
 }
 
 .header_area .navbar .search {
@@ -2485,21 +2485,28 @@ h6 {
 
 .progress-table {
   background: #fff;
-  padding: 15px 0px 30px 0px;
+  padding: 0px 0px 10px 0px;
   min-width: 800px;
 }
 
 .progress-table .serial {
   width: 11.83%;
-  padding-left: 30px;
+  padding-left: 20px;
+  margin-right: 10px;
+  font-weight: bold;
 }
 
 .progress-table .country {
-  width: 28.07%;
+  width: 40.07%;
+  margin-left: -50px;
+  padding-left: 0px;
+  font-weight: bold;
 }
 
 .progress-table .visit {
   width: 19.74%;
+  margin-left: -20px;
+  font-weight: bold;
 }
 
 .progress-table .percentage {
@@ -2521,8 +2528,8 @@ h6 {
 }
 
 .progress-table .table-row {
-  padding: 15px 0;
-  border-top: 1px solid #edf3fd;
+  padding: 5px 0px 5px 0px;
+  border-top: 1px solid #aaa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2538,7 +2545,7 @@ h6 {
 }
 
 .progress-table .table-row .country img {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .progress-table .table-row .percentage .progress {
