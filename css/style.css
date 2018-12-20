@@ -380,12 +380,12 @@ button:focus {
 /* Home Banner Area css
 ============================================================================================ */
 .home_banner_area {
-  z-index: 1;
+z-index: 1;
   min-height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(../img/banner.jpg) no-repeat scroll center center;
+  background: url(../img/bg2.jpg) no-repeat scroll center center;
   background-size: cover;
 }
 
@@ -394,6 +394,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  
 }
 
 .home_banner_area .banner_inner .container {
@@ -431,6 +432,7 @@ button:focus {
 
 .home_banner_area .banner_inner .banner_content .banner_map_img {
   text-align: right;
+
 }
 
 .blog_banner {
